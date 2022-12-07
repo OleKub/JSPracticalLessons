@@ -36,61 +36,61 @@
 // *****
 // ******
 
-let  result = '';
-const length = 7;
+// let  result = '';
+// const length = 7;
 
-for (let i =1; i < length; i++) {
+// for (let i =1; i < length; i++) {
 
-    for (let j = 0; j < i; j++) {
-        result += "*";
-    }
+//     for (let j = 0; j < i; j++) {
+//         result += "*";
+//     }
     
-    result += '\n';
-}
+//     result += '\n';
+// }
 
-console.log(result);
+// console.log(result);
 
 
 
-first: for (let i = 0; i < 4; i++) {
-    console.log(`First level: ${i}`);
-    for (let j = 0; j < 3; j++) {
-        console.log(`Second level: ${j}`);
-        for (let k = 0; k < 3; k++) {
-            if (k === 2) continue first;
-            console.log(`Third level: ${k}`);
-        }
-    }
-}
+// first: for (let i = 0; i < 4; i++) {
+//     console.log(`First level: ${i}`);
+//     for (let j = 0; j < 3; j++) {
+//         console.log(`Second level: ${j}`);
+//         for (let k = 0; k < 3; k++) {
+//             if (k === 2) continue first;
+//             console.log(`Third level: ${k}`);
+//         }
+//     }
+// }
 
-for (let i = 5; i < 11; i++) {
-    console.log(i);
-}
+// for (let i = 5; i < 11; i++) {
+//     console.log(i);
+// }
 
-for (let i = 20; i > 9; i--) {
-    if ( i == 13) break;
-    console.log(i);
-}
+// for (let i = 20; i > 9; i--) {
+//     if ( i == 13) break;
+//     console.log(i);
+// }
 
-for (let i = 2; i < 11; i++) {
-    if (i % 2 == 0) {
-        console.log(i);
-    }
-}
+// for (let i = 2; i < 11; i++) {
+//     if (i % 2 == 0) {
+//         console.log(i);
+//     }
+// }
 
-function fourthTask() {
-    let i = 2;
+// function fourthTask() {
+//     let i = 2;
 
-    while (i <= 16) {
-        if (i % 2 === 0) {
-            i++;
-            continue;
-        } else {
-            console.log(i);
-        }
-        i++;
-    }
-}
+//     while (i <= 16) {
+//         if (i % 2 === 0) {
+//             i++;
+//             continue;
+//         } else {
+//             console.log(i);
+//         }
+//         i++;
+//     }
+// }
 
 // const arrNumber = [];
 
@@ -123,3 +123,29 @@ function fourthTask() {
 // }
 
 // console.log(data);
+
+// const data = [5, 10, 'Shopping', 20, 'Homework'];
+//     const result = [];
+
+//     for (let i = 1; i <= data.length; i++) {
+//         result[i - 1] = data[data.length - i]
+//     }
+
+//     console.log(result);
+//     return result;
+
+const lines = 5;
+let result = '';
+
+for (let i = 0; i <= lines; i++) {
+    for (let j = 0; j < lines - i; j++) {
+        result += " ";
+    }
+    for (let j=0; j < 2 * i + 1; j++) {
+        result += "*";
+    }
+
+    result += '\n';
+}
+
+console.log(result);
