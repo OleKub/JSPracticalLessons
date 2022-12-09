@@ -20,32 +20,62 @@
 // const test = "12.4";
 // console.log(Math.round(test));
 
-function sayHello(name) {
-    return `Hi, ${name}!`;
-}
+// function sayHello(name) {
+//     return `Hi, ${name}!`;
+// }
 
-sayHello('Alex');
+// sayHello('Alex');
 
 
-function returnNeighboringNumbers(num) {
-    return [num - 1, num, num + 1];
-}
+// function returnNeighboringNumbers(num) {
+//     return [num - 1, num, num + 1];
+// }
 
-returnNeighboringNumbers(5);
+// returnNeighboringNumbers(5);
 
-function getMathResult (num, times) {
-    if (typeof(times) !== 'number' || times <= 0) {
-        return num;
+// function getMathResult (num, times) {
+//     if (typeof(times) !== 'number' || times <= 0) {
+//         return num;
+//     }
+
+//     let str = '';
+
+//     for (let i = 1; i <= times; i++) {
+//         if (i == times) {
+//             str+= `${num * i}`;
+//         } else {
+//             str += `${num * i}---`;
+//         }
+//     }
+//     return str;
+// }getMathResult(10, 5);
+
+function calculateVolumeAndArea(length) {
+    if (typeof (length) !== 'number' || length < 0 || !Number.isInteger(length)) {
+        return "При вычислении произошла ошибка";
     }
 
-    let str = '';
+    let volume = 0;
+         area = 0;
 
-    for (let i = 1; i <= times; i++) {
-        if (i == times) {
-            str+= `${num * i}`;
-        } else {
-            str += `${num * i}---`;
-        }
+    volume = length * length * length;
+    area = 6 * length * length;
+
+    return `Объем куба: ${volume}, Площадь всей поверхности: ${area}`;
+}
+
+calculateVolumeAndArea(5);
+
+function getCoupeNumber(seatNumber) {
+    if (typeof (seatNumber) !== 'number' || seatNumber < 0 || !Number.isInteger(seatNumber)) {
+        return "Ошибка. ПРоверте правильность введенного номера места"
     }
-    return str;
-}getMathResult(10, 5);
+
+    if (seatNumber === 0 || seatNumber > 36) {
+        return "Таких мест в вагоне не существует";
+    }
+
+    return Math.ceil(seatNumber / 4);
+}
+
+getCoupeNumber(33);
