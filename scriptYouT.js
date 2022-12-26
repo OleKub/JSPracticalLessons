@@ -43,12 +43,22 @@
 // console.log(myCity)
 
 
-const uName = 'Oleksandr'
-const postsQty = 23
+// const uName = 'Oleksandr'
+// const postsQty = 23
 
-const userProfile = {
-    uName,
-    postsQty,
-    hasSiqnedAgreement: false
+// const userProfile = {
+//     uName,
+//     postsQty,
+//     hasSiqnedAgreement: false
+// }
+// console.log(userProfile)
+
+const uName = 'Oleksandr'
+const uAdress = {
+    uCity: 'Kyiv',
+    uCountry: 'Ukraine'
 }
-console.log(userProfile)
+
+const greeting = `Hi, my name is ${uName}, i live in ${uAdress.uCity}.`
+
+console.log(greeting)
