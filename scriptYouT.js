@@ -74,13 +74,38 @@
 // };
 // console.log(multByFactor(10,2));
 
-const fnWithError = () => {
-    throw new Error('Some error');
-};
-try {
-    fnWithError();
-} catch (error) {
-    console.log(error.message);
-}
+// const fnWithError = () => {
+//     throw new Error('Some error');
+// };
+// try {
+//     fnWithError();
+// } catch (error) {
+//     console.log(error.message);
+// }
 
-console.log('Continue...');
+// console.log('Continue...');
+
+// const myArray = [1,2,3]
+// console.log(myArray)
+
+// myArray.forEach(el => console.log(el * 2))
+
+// console.log(myArray)
+
+// const myArray =[1,2,3]
+// console.log(myArray)
+
+// const newArray = myArray.map(el => el * 3)
+
+// console.log(newArray)
+// console.log(myArray)
+
+const age = 33;
+
+if (age > 18) {
+    console.log('Is adult')
+} else if (age >= 12) {
+    console.log('Is teenager')
+} else {
+    console.log('is child')
+}
