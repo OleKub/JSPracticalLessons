@@ -1,4 +1,4 @@
-"use strics"
+"use strics";
 
 // let a
 // console.log(a)
@@ -53,12 +53,34 @@
 // }
 // console.log(userProfile)
 
-const uName = 'Oleksandr'
-const uAdress = {
-    uCity: 'Kyiv',
-    uCountry: 'Ukraine'
+// const uName = 'Oleksandr';
+// const uAdress = {
+//     uCity: 'Kyiv',
+//     uCountry: 'Ukraine'
+// };
+
+// const greeting = `Hi, my name is ${uName}, i live in ${uAdress.uCity}.`;
+
+// console.log(greeting);
+
+// function multByFactor(value, multiplier = 1) {
+//     return value * multiplier;
+// }
+
+// console.log(multByFactor(10,2));
+
+// const multByFactor = (value, multiplier = 1) => {
+//     return value * multiplier;
+// };
+// console.log(multByFactor(10,2));
+
+const fnWithError = () => {
+    throw new Error('Some error');
+};
+try {
+    fnWithError();
+} catch (error) {
+    console.log(error.message);
 }
 
-const greeting = `Hi, my name is ${uName}, i live in ${uAdress.uCity}.`
-
-console.log(greeting)
+console.log('Continue...');
