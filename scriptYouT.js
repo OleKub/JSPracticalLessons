@@ -100,12 +100,28 @@
 // console.log(newArray)
 // console.log(myArray)
 
-const age = 33;
+// const age = 33;
 
-if (age > 18) {
-    console.log('Is adult')
-} else if (age >= 12) {
-    console.log('Is teenager')
-} else {
-    console.log('is child')
+// if (age > 18) {
+//     console.log('Is adult')
+// } else if (age >= 12) {
+//     console.log('Is teenager')
+// } else {
+//     console.log('is child')
+// }
+
+const month = 2
+
+switch (month) {
+    case 12:
+        console.log('December')
+        break
+    case 1:
+        console.log('January')
+        break  
+    case 2:
+        console.log('February')
+        break       
+    default:
+        console.log('This is not a winter month')       
 }
