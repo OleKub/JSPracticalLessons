@@ -110,18 +110,36 @@
 //     console.log('is child')
 // }
 
-const month = 2
+// const month = 2
 
-switch (month) {
-    case 12:
-        console.log('December')
-        break
-    case 1:
-        console.log('January')
-        break  
-    case 2:
-        console.log('February')
-        break       
-    default:
-        console.log('This is not a winter month')       
+// switch (month) {
+//     case 12:
+//         console.log('December')
+//         break
+//     case 1:
+//         console.log('January')
+//         break  
+//     case 2:
+//         console.log('February')
+//         break       
+//     default:
+//         console.log('This is not a winter month')       
+// }
+
+class Comment {
+    constructor(text) {
+        this.text = text
+        this.votesQty = 0
+    }
+
+    upvote() {
+        this.votesQty +=1
+    }
+
+    static mergeComments(first, second) {
+        return `${first} ${second}`
+    }
 }
+
+Comment.mergeCommnts('First comment.', 'Second comment.')
+const firstComment = new Comment('First Coment')
