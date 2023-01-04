@@ -144,10 +144,24 @@
 // Comment.mergeCommnts('First comment.', 'Second comment.')
 // const firstComment = new Comment('First Coment')
 
-fetch('https://jsonplaceholder.typicode.com/todos')
-    .then(response => {
-        console.log(response)
-        return response.json()
-    })
-    .then(json => console.log(json))
-    .catch(error => console.error(error))
+// fetch('https://jsonplaceholder.typicode.com/todos')
+//     .then(response => {
+//         console.log(response)
+//         return response.json()
+//     })
+//     .then(json => console.log(json))
+//     .catch(error => console.error(error))
+
+const timerPromise = () =>
+    new Promise((resolve, reject) =>
+    setTimeout(() => resolve(), 2000))
+
+const asyncFn = async () => {
+    console.log('Timer starts')
+    const startTime = performance.now()
+    await timerPromise()
+    const endTime = performance.now()
+    console.log('Timer ended', endTime - startTime)
+}    
+
+asyncFn()
