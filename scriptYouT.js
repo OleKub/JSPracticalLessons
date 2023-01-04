@@ -126,20 +126,28 @@
 //         console.log('This is not a winter month')       
 // }
 
-class Comment {
-    constructor(text) {
-        this.text = text
-        this.votesQty = 0
-    }
+// class Comment {
+//     constructor(text) {
+//         this.text = text
+//         this.votesQty = 0
+//     }
 
-    upvote() {
-        this.votesQty +=1
-    }
+//     upvote() {
+//         this.votesQty +=1
+//     }
 
-    static mergeComments(first, second) {
-        return `${first} ${second}`
-    }
-}
+//     static mergeComments(first, second) {
+//         return `${first} ${second}`
+//     }
+// }
 
-Comment.mergeCommnts('First comment.', 'Second comment.')
-const firstComment = new Comment('First Coment')
+// Comment.mergeCommnts('First comment.', 'Second comment.')
+// const firstComment = new Comment('First Coment')
+
+fetch('https://jsonplaceholder.typicode.com/todos')
+    .then(response => {
+        console.log(response)
+        return response.json()
+    })
+    .then(json => console.log(json))
+    .catch(error => console.error(error))
