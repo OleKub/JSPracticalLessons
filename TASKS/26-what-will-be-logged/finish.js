@@ -13,3 +13,6 @@ function fn() {
 }
 
 fn()(true)
+
+// Привет из функции fn
+// true
