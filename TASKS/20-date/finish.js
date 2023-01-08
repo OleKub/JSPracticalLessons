@@ -4,3 +4,7 @@
  *
  * 2. Выведите значение в консоль
  */
+
+const date = new Date()
+const dateInMs  = date.getTime()
+console.log(dateInMs)

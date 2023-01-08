@@ -6,3 +6,7 @@
  *
  * 3. Выведите в консоль длину результирующего массива
  */
+
+const newArray = [true, 115, '', 2]
+newArray.push(20, 40)
+console.log(newArray.length)

@@ -4,3 +4,5 @@
  *
  * 2. Используйте стрелочную функцию
  */
+
+setTimeout(() => console.log('Hallo world'), 5000)

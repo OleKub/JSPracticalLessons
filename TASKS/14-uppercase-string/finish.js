@@ -12,3 +12,13 @@
  *
  * 5. Выведите в консоль значение второй переменной
  */
+
+const otherString = 'seven tree'
+
+console.log(otherString instanceof String)
+
+console.log(typeof otherString)
+
+const stringUpperCase = otherString.toUpperCase()
+
+console.log(stringUpperCase)

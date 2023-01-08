@@ -8,3 +8,8 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+
+const newArray = ['ten', 1, 22, true]
+console.log(newArray)
+newArray[1] = 115
+console.log(newArray)
