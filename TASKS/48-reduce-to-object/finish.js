@@ -7,6 +7,15 @@
  * равными сумме всех количеств в каждой категории
  */
 
+function quantitiesByCategories(products) {
+  return products.reduce((qtysByCategories, product) => {
+    qtysByCategories[product.category] = 
+      (qtysByCategories[product.category] || 0) + product.quantity
+
+    return qtysByCategories
+  }, {})
+}
+
 const inputProducts = [
   {
     title: 'Phone case',
