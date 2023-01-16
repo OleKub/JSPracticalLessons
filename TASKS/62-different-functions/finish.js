@@ -14,3 +14,4 @@ function firstFunction(a, b) {
 const secondFunction = function (a, b) {
   return a + b
 }
+// only info
