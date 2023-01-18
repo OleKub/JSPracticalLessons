@@ -13,6 +13,18 @@
  * 4. Выводы в консоли должны совпасть
  */
 
+class Fruit {
+    constructor(title, price) {
+        this.fruitTitle = title
+        this.fruitPrice = price
+    }
+
+    priceInfo() {
+        return `Price of the ${this.fruitTitle} is ${this.fruitPrice}$`
+    }
+
+}
+
 const apple = new Fruit('Apple', 2)
 console.log(apple.priceInfo())
 // Price of the Apple is 2$
